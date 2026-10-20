@@ -1,3 +1,4 @@
+
 {
   "name": "Pomodoro Timer & To-Do",
   "short_name": "PomodoroApp",
@@ -8,7 +9,7 @@
   "description": "A simple and effective Pomodoro timer and To-Do list app to boost your productivity.",
   "icons": [
     {
-      "src": "https://via.placeholder.com/512",
+      "src": "https://raw.githubusercontent.com/gharroudasana-png/pomodoro-app/main/icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
