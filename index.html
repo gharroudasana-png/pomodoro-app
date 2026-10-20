@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤقت البومودورو والمهام</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Tajawal', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col items-center justify-center p-4">
+
+    <div class="w-full max-w-md bg-slate-900 border border-slate-800 rounded-2xl shadow-2xl p-6 space-y-6">
+        
+        <!-- رأس التطبيق -->
+        <header class="text-center">
+            <h1 class="text-2xl font-bold text-emerald-400">🍅 بومودورو والمهام</h1>
+            <p class="text-xs text-slate-400 mt-1">نظم وقتك، ركز، وحقق أهدافك</p>
+        </header>
+
+        <!-- أزرار تبديل وضع المؤقت -->
+        <div class="flex bg-slate-950 p-1 rounded-xl border border-slate-800 text-xs">
+            <button onclick="setMode('work', 25, this)" class="flex-1 py-2 rounded-lg font-medium transition bg-emerald-600 text-white mode-btn">وقت العمل</button>
+            <button onclick="setMode('shortBreak', 5, this)" class="flex-1 py-2 rounded-lg font-medium transition text-slate-400 hover:text-white mode-btn">راحة قصيرة</button>
+            <button onclick="setMode('longBreak', 15, this)" class="flex-1 py-2 rounded-lg font-medium transition text-slate-400 hover:text-white mode-btn">راحة طويلة</button>
+        </div>
+
+        <!-- دائرة المؤقت -->
+        <div class="flex flex-col items-center justify-center my-4">
+            <div id="timerDisplay" class="text-6xl font-extrabold tracking-wider text-emerald-400 my-4">
+                25:00
+            </div>
+            
+            <div class="flex space-x-3 space-x-reverse">
+                <button id="startStopBtn" onclick="toggleTimer
+                  
